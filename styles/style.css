@@ -129,3 +129,48 @@ body{
     margin-left: 10px;
     margin-right: 10px;
 }
+
+.section2{
+    width: 100vw;
+    height: 100vh;
+
+    background-color: #1C1C1E;
+    position: relative;
+}
+
+#head{
+    width: fit-content;
+    height: fit-content;
+    font-size: 30px;
+    color: white;
+
+    right: 5vw;
+    position: absolute;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.photo{
+    width: 463px;
+    height: 617px;
+
+    margin-left: 50px;
+}
+
+#description{
+    width: 800px;
+    height: fit-content;
+    color: white;
+    font-size: 20px;
+    margin-left: 45vw;
+    margin-top: -60vh;
+
+    position: absolute;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+
+}
