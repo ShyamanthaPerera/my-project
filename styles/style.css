@@ -16,8 +16,15 @@ body{
 
 }
 
+/*.logo{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}*/
+
 .navbar{
-    margin-left: 650px;
+    margin-left: 550px;
 }
 
 .navbar>a{
@@ -56,16 +63,41 @@ body{
     position: relative;
 }
 
-.name{
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-
+#name>h2{
+    width: fit-content;
+    height: fit-content;
+    color: white;
+    font-size: 50px;
     position: absolute;
 
-    color: red;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+#name>h4{
+    width: fit-content;
+    height: fit-content;
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    padding-top: 80px;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
 }
 
 .img{
@@ -76,4 +108,24 @@ body{
 .gallery>img{
     width: 500px;
     height: 500px;
+}
+
+.icon{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+
+    bottom: 2vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    position: absolute;
+}
+
+.icon>div>img{
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
