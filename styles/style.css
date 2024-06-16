@@ -1,67 +1,11 @@
-body{
-    overflow-x: hidden;
+
+body {
+    font-family: 'Poppins', Arial, sans-serif; /* Use 'Poppins' font as primary, fallback to Arial and generic sans-serif */
+    line-height: 1.6; /* Adjust line height for better readability */
 }
 
-.header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    padding: 20px 100px;
-    background: transparent;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
 
-}
-
-/*.logo{
-    font-size: 20px;
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-}*/
-
-.navbar{
-    margin-left: 550px;
-}
-
-.navbar>a{
-    position: relative;
-    font-size: 18px;
-    color: white;
-    font-weight: 500;
-    text-decoration: none;
-    margin-left: 60px;
-
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-}
-
-.navbar>a::before{
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: white;
-    transition: .3s;
-}
-
-.navbar>a:hover::before{
-    width: 100%;
-}
-
-.section1{
-    width: 100vw;
-    height: 100vh;
-
-    background-color: black;
-    position: relative;
-}
+/* CSS for Header Navigation */
 
 #name>h2{
     width: fit-content;
@@ -100,77 +44,595 @@ body{
     margin: auto;
 }
 
-.img{
-    width: 500px;
-    height: 500px;
-}
-
-.gallery>img{
-    width: 500px;
-    height: 500px;
-}
-
-.icon{
-    width: fit-content;
-    height: fit-content;
+.header {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
     display: flex;
+    justify-content: center;
+    background-color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
 
-    bottom: 2vh;
-    left: 0;
-    right: 0;
-    margin: auto;
+.header li {
+    margin: 0 10px;
+}
 
+.header li a {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: inline-block;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.header li a:before {
+    content: '';
     position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
 }
 
-.icon>div>img{
-    width: 30px;
-    height: 30px;
-    margin-left: 10px;
-    margin-right: 10px;
+.header li a:hover {
+    color: #FFD700; /* Change color on hover */
+    transform: translateY(-3px); /* Move text up slightly */
 }
 
-.section2{
+.header li a:hover:before {
+    transform: scaleX(1); /* Expand underline on hover */
+}
+
+/* Responsive Styles for Navigation*/
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header li {
+        margin: -8px 0;
+    }
+}
+/*End Responsive Styles for Navigation*/
+
+
+
+
+
+/* CSS for Section1 */
+.section1 {
     width: 100vw;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #000000; /* Example background color */
+}
 
+.projectList h2{
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    margin-top: 150px;
+}
+.projectList p{
+    padding-left: 200px;
+    padding-right: 200px;
+
+    align-items: center;
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+
+#name {
+    margin-bottom: 20px;
+}
+
+.icon {
+    bottom: 2vh;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.icon div {
+    margin: 10px;
+}
+
+.icon img {
+    width: 50px; /* Adjust icon size as needed */
+    height: auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .icon img {
+        width: 40px; /* Adjust icon size for smaller screens */
+    }
+    #name h2 {
+        bottom: 100px;
+    }
+}
+
+/*End CSS for Section1 */
+
+
+
+
+/* CSS for section2 */
+.section2{
+    /*width: 100vw;*/
+    /*height: 100vh;*/
     background-color: #1C1C1E;
     position: relative;
+
 }
 
-#head{
-    width: fit-content;
-    height: fit-content;
-    font-size: 30px;
-    color: white;
+/*.aboutme{*/
+/*    !*font-size: 2vh;*!*/
+/*}*/
 
-    right: 5vw;
-    position: absolute;
+/* CSS for Grid Layout */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px; /* Adjust margin as needed */
+}
 
+.col1, .col2 {
+    padding: 20px; /* Adjust padding as needed */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+    background-color: #1c1c1e;
+}
+
+.col1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ensure col1 takes full height */
+    /* Optionally, add other styles as needed */
+}
+
+.abc {
+    max-width: 100%; /* Ensure image does not exceed parent width */
+    height: auto; /* Maintain image aspect ratio */
+    display: block; /* Ensure image behaves like a block element */
+    /* Optionally, add other styles such as border-radius, box-shadow, etc. */
+}
+
+
+.col1 img{
+    width: 80%;
+    height: auto;
+}
+
+.col2 h1{
+    font-size: 5vh;
+    font-weight: bold;
     font-family: "Poppins", sans-serif;
-    font-weight: 200;
     font-style: normal;
-}
-
-.photo{
-    width: 463px;
-    height: 617px;
-
-    margin-left: 50px;
-}
-
-#description{
-    width: 800px;
-    height: fit-content;
     color: white;
-    font-size: 20px;
-    margin-left: 45vw;
-    margin-top: -60vh;
+}
 
-    position: absolute;
+.col2 a{
+    border-radius: 100px;
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #ffffff14; /* Green background color */
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    border-radius: 100px;
+}
+.col2 a:hover {
+    border-radius: 100px;
+    background-color: #FFFFFF64;
+    transform: translateY(-2px); /* Move button slightly up on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow on hover */
+}
 
+.col2 a:active {
+    border-radius: 100px;
+    transform: translateY(0); /* Reset transform on click */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add smaller shadow on click */
+}
+
+.col2 p{
+    font-size: 16px;
     font-family: "Poppins", sans-serif;
-    font-weight: 200;
     font-style: normal;
+    color: white;
+}
+
+
+.col1 {
+    flex: 1 1 100%; /* Full width by default */
+}
+
+.col2 {
+    flex: 1 1 100%; /* Full width by default */
+}
+
+
+/*.col2 {*/
+/*    text-align: center; !* Center align text content *!*/
+/*}*/
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+    .col1 {
+        flex: 1 1 50%; /* Two columns per row on medium screens */
+    }
+    .col2 {
+        flex: 1 1 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .col1 {
+        flex: 1 1 50%;
+    }
+    .col2 {
+        flex: 1 1 50%;
+        text-align: center;
+    }
+}
+/*end Responsive Styles */
+
+
+
+/* Base styles */
+.frow {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+    justify-content: space-between; /* Distribute items evenly with space between them */
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.f1, .f2 {
+    width: 100%; /* Full width by default */
+    padding: 20px;
+    box-sizing: border-box; /* Include padding and border in total width/height */
+}
+.f1 h2,.f1 p ,.f1 {
+    color: white;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+    .f1, .f2 {
+        width: calc(50% - 20px); /* Two columns, subtracting margin/padding */
+    }
+}
+
+
+.address {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Inherits text color from parent */
+}
+
+
+/* Form group styles */
+.form-group {
+    margin-bottom: 20px; /* Space between form groups */
+}
+
+/* Input and textarea styles */
+.form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #494949;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+    background-color: #1e1e1e;
+}
+
+
+textarea.form-control {
+    resize: vertical; /* Allow vertical resizing of textarea */
+    min-height: 100px; /* Minimum height for textarea */
+}
+
+/* Button styles */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff; /* Bootstrap primary color */
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.btn-medium {
+    padding: 12px 24px; /* Larger padding for medium size */
+    background-color: #ffffff14; /* Green background color */
+    color: white;
+    border-radius: 100px;
+}
+
+.btn-medium:hover {
+    background-color: #FFFFFF64;
+    transform: translateY(-2px); /* Move button slightly up on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow on hover */
+    border-radius: 100px;
+}
+
+.btn-medium:active {
+    transform: translateY(0); /* Reset transform on click */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add smaller shadow on click */
+    border-radius: 100px;
+}
+
+.icon-link{
+    text-decoration: none;
+    color: #ffffff;
+    display: inline-flex;
+    align-items: center;
+}
+
+
+
+.section3 {
+    width: 100%;
+    /*height: 100px;*/
+    display: flex;
+    flex-direction: column;
 
 }
+
+
+.arow, .arow2, .arowabk{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 20px;
+}
+
+.arow .col:nth-child(1) {
+    width: 35%
+}
+.arow .col:nth-child(2) {
+    width: 55%
+}
+
+
+
+.arowabk .col:nth-child(1) {
+    width: auto;
+}
+.arowabk .col:nth-child(2) {
+    width: auto;
+}
+.arowabk .col:nth-child(3) {
+    width: auto;
+}
+.arowabk .col:nth-child(4) {
+    width: auto;
+}
+.arowabk .col:nth-child(4) {
+    width: auto;
+}
+.arowabk .col:nth-child(4) {
+    width: auto;
+}
+.arowabk .col:nth-child(4) {
+    width: auto;
+}
+
+
+
+
+
+.arow2 .col:nth-child(1) {
+    width: 55%
+}
+.arow2 .col:nth-child(2) {
+    width: 35%
+}
+
+@media (max-width: 768px) {
+    .arow .col:nth-child(1) {
+        width: 100%
+    }
+    .arow .col:nth-child(2) {
+        width: 100%
+    }
+
+    .arow2 .col:nth-child(1) {
+        width: 100%
+    }
+    .arow2 .col:nth-child(2) {
+        width: 100%
+    }
+}
+
+
+
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: #333333;
+    border: 1px solid #ddd;
+    border-radius: 0.25rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    margin: 15px;
+    border: 1px solid #000000;
+    border-radius: 0.25rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    padding: 1rem;
+    transition: box-shadow 0.3s ease-in-out;
+    transition: transform 0.3s ease;
+
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 1.25rem;
+    color: white;
+    align-items: center;
+    text-align: center;
+}
+
+.card-bodyx {
+    flex: 1 1 auto;
+    padding: 1.25rem;
+    color: white;
+    align-items: center;
+    text-align: center;
+    font-size: 1.3vw;
+    font-weight: bold;
+}
+
+
+.card-footer {
+    padding: 0.75rem 1.25rem;
+    /*background-color: #000000;*/
+    /*border-top: 1px solid #ddd;*/
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #ffffff14;
+    border-radius: 100px;
+    /*border-color: #007bff;*/
+}
+
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+.btn-secondary {
+    color: #fff;
+    border-radius: 100px;
+    background-color: rgba(52, 166, 87, 0.72);
+    border-color: #6c757d;
+}
+
+.btn-secondary:hover {
+    color: #fff;
+    background-color: #5a6268;
+    border-color: #545b62;
+}
+
+
+
+
+
+
+.rowp {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.rowp div {
+    flex: 1 0 20%; /* Adjust the width based on the number of columns you want */
+    margin: 10px;
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .rowp div {
+        flex: 1 0 45%; /* Adjust to 2 columns per row on smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .rowp div {
+        flex: 1 0 100%; /* Stack cards vertically on smaller screens */
+    }
+}
+
+
+
+.btn-primary2 {
+    color: #fff;
+    background-color: #ffffff14;
+    border-radius: 100px;
+    font-size: 12px;
+    /*border-color: #007bff;*/
+}
+
+.btn-primary2:hover {
+    color: #fff;
+    background-color: #0056b3;
+    border-color: #004085;
+
+}
+
+
+
+.btn-secondary2 {
+    margin-top: 10px;
+    color: #fff;
+    border-radius: 100px;
+    background-color: rgba(52, 166, 87, 0.72);
+    border-color: #6c757d;
+    font-size: 12px;
+}
+
+.btn-secondary2:hover {
+    color: #fff;
+    background-color: #5a6268;
+    border-color: #545b62;
+    font-size: 12px;
+}
+
+
+
+
+

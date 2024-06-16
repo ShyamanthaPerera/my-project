@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,27 +11,30 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
     <link href="https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400..700&family=Fugaz+One&family=Molengo&family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header class="header">
-    <!--<a class="logo">Shyamantha Perera</a>-->
-    <nav class="navbar">
-        <a href="">About Me</a>
-        <a href="">Education</a>
-        <a href="">Skills</a>
-        <a href="">Projects</a>
-        <a href="">Gallery</a>
-        <a href="">Contact me</a>
-    </nav>
-</header>
 
-<section class="section1">
+<ul class="header">
+
+    <li><a href="#aboutme">About Me</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+
+</ul>
+
+
+<section class="section1" id="skillsx">
     <div id="name">
-        <h2>Shyamantha Perera</h2>
-        <h4>Software Developer</h4>
-    </div>
+                <h2>Shyamantha Perera</h2>
+                <h4>Software Developer</h4>
+            </div>
     <div class="icon">
         <div>
             <img src="assets/icons/header_icons/icons8-facebook-100.png" alt="facebook">
@@ -51,169 +57,198 @@
     </div>
 </section>
 
-<section class="section2">
-    <div id="head">
-        <h1>About Me</h1>
-    </div>
-    <div>
-        <img class="photo" src="assets/images/portfolio.jpg">
-    </div>
-    <div id="description">
-        <p>I'm Shyamantha Perera and I'm from Sri Lanka. 22 years old fullstack developer with a lot of dreams.And I'm working hard to go into those dreams.I can communicate well with others and do things well.</p>
 
-        <p>Full Name : Shyamantha Perera</p>
-        <p>Age : 22 Years</p>
-        <p>Nationality : Sri Lankan</p>
-        <p>Mobile Number : +94717085277</p>
-        <p>E Mail : shyamanthaperera64@gmail.com</p>
 
-        <a href="assets/cv/Shyamantha%20Perera%20CV%201.2.pdf" download>Download CV</a>
+
+
+<section class="section2" id="aboutme">
+    <div class="row">
+        <div class="col1">
+                <img src="assets/images/portfolio.jpg">
+        </div>
+        <div class="col2">
+            <h1>About Me</h1>
+
+            <p>Hi there! Imma Shyamantha Perera and I'm from Sri Lanka. 25 years old fullstack developer with a lot of dreams. And I'm working hard to go into those dreams. I can communicate well with others and do things well.</p>
+
+            <p><span style="font-weight: bold">Full Name : </span>&nbsp; Shyamantha Perera</p>
+            <p><span style="font-weight: bold">Age :  </span> &nbsp; 25 Years</p>
+            <p><span style="font-weight: bold">Nationality : </span>&nbsp; Sri Lankan</p>
+            <p><span style="font-weight: bold">Mobile Number : </span> &nbsp;+94717085277</p>
+            <p><span style="font-weight: bold">E Mail : </span> &nbsp;shyamanthaperera64@gmail.com</p>
+
+            <a href="assets/cv/Shyamantha%20Perera%20CV%201.2.pdf" download>Download CV</a>
+        </div>
     </div>
 </section>
 
-<div>
-    <h1>Education</h1>
 
-    <div>
-        <h4>2004 - 2014</h4>
-        <p>Saddhathissa College - Walgama Primary & Secondary School</p>
-    </div>
-    <div>
-        <h4>2014</h4>
-        <p>I Passed The GCE OL Examination With Flying Colors And Moved To Sripali College Horana</p>
-    </div>
-    <div>
-        <h4>2015 - 2017</h4>
-        <p>I Studied My Advanced Level In Maths Stream At SriPalee College</p>
-    </div>
-    <div>
-        <h4>2018</h4>
-        <p>I Got My English Diploma From The BritishWay English Acadamy</p>
-    </div>
-    <div>
-        <h4>2019</h4>
-        <p>I Got My Human Resorces Managment Certificate At Chartered Institute of Personnel Management</p>
-    </div>
-    <div>
-        <h4>2023 </h4>
-        <p>Now I’m An Undergraduate Student At Institute of Software Engineering</p>
-    </div>
-</div>
 
-<div>
-    <h1>Skills</h1>
 
-    <h2>Programming</h2>
-    <div>
-        <img src="assets/icons/skills/icons8-java-96.png">
-        <h4>Java</h4>
-    </div>
-    <div>
-        <img src="assets/icons/skills/icons8-html-96.png">
-        <h4>HTML</h4>
-    </div>
-    <div>
-        <img src="assets/icons/skills/icons8-css-96.png">
-        <h4>CSS</h4>
-    </div>
-    <div>
-        <img src="assets/icons/skills/icons8-mysql-96.png">
-        <h4>MySQL</h4>
+<section class="section3" id="projects" >
+    <div class="projectList" style="background-color: black" >
+        <!--        <h2>ASSIGNMENT</h2>-->
+        <h2>PROJECT</h2>
+        <!--        <p>This section of my portfolio highlights various assignment and tasks I've completed during my academic studies and professional training. These assignments demonstrate my ability to apply theoretical knowledge to practical tasks, solve problems creatively, and deliver quality work within given constraints. Each project reflects my skills in [mention relevant skills, e.g., research, analysis, programming, design, etc.] and showcases my commitment to continuous learning and growth.</p>-->
+        <p>Explore a selection of projects that showcase my skills and expertise. Each project represents a unique challenge and solution, demonstrating my ability to innovate and deliver impactful results. From web applications to software solutions, these projects highlight my dedication to quality and creativity in every endeavor.</p>
     </div>
 
-    <h2>Tools</h2>
-    <div>
-        <img src="assets/icons/skills/intellij_idea_48px.png">
-        <h4>Intellij</h4>
+    <div class="arowabk" style="background-color:black">
+        <div class="col card">
+            <div class="card-bodyx">
+                My Profile
+            </div>
+            <div class="card-footer">
+                <a href="https://shyamanthaperera.github.io/my-profile/" class="btn btn-primary2" target="_blank">Live Preview</a>
+                <a href="https://github.com/ShyamanthaPerera/my-profile.git" class="btn btn-secondary2" target="_blank">Git source code</a>
+            </div>
+        </div>
+
+        <div class="col card">
+            <div class="card-bodyx">
+                Assignment 03
+            </div>
+            <div class="card-footer">
+                <a href="https://shyamanthaperera.github.io/internet-technologies-assignment-03/" class="btn btn-primary2" target="_blank">Live Preview</a>
+                <a href="https://github.com/ShyamanthaPerera/internet-technologies-assignment-03.git" class="btn btn-secondary2" target="_blank">Git source code</a>
+            </div>
+        </div>
+        <div class="col card">
+            <div class="card-bodyx">
+                Assignment 04
+            </div>
+            <div class="card-footer">
+                <a href="https://shyamanthaperera.github.io/internet-technologies-assignment-04/" class="btn btn-primary2" target="_blank">Live Preview</a>
+                <a href="https://github.com/ShyamanthaPerera/internet-technologies-assignment-04.git" class="btn btn-secondary2" target="_blank">Git source code</a>
+            </div>
+        </div>
+        <div class="col card">
+            <div class="card-bodyx">
+                Pos System
+            </div>
+            <div class="card-footer">
+                <a href="https://shyamanthaperera.github.io/internet-technologies-assignments-06/" class="btn btn-primary2" target="_blank">Live Preview</a>
+                <a href="https://github.com/ShyamanthaPerera/internet-technologies-assignments-06.git" class="btn btn-secondary2" target="_blank">Git source code</a>
+            </div>
+        </div>
+        <div class="col card">
+            <div class="card-bodyx">
+                Assignment 08
+            </div>
+            <div class="card-footer">
+                <a href="https://shyamanthaperera.github.io/internet-technologies-assignments-08/" class="btn btn-primary2" target="_blank">Live Preview</a>
+                <a href="https://github.com/ShyamanthaPerera/internet-technologies-assignments-08.git" class="btn btn-secondary2" target="_blank">Git source code</a>
+            </div>
+        </div>
+        <div class="col card">
+            <div class="card-bodyx">
+                Assignment 09
+            </div>
+            <div class="card-footer">
+                <a href="https://shyamanthaperera.github.io/internet-technologies-assignments-09/" class="btn btn-primary2"  target="_blank">Live Preview</a>
+                <a href="https://github.com/ShyamanthaPerera/internet-technologies-assignments-09.git" class="btn btn-secondary2"  target="_blank">Git source code</a>
+            </div>
+        </div>
+
+        <div class="col card">
+            <div class="card-bodyx">
+                TPG MultiProject(QS)
+            </div>
+            <div class="card-footer">
+                <a href="https://shyamanthaperera.github.io/internet-technologies-assignments-10/" class="btn btn-primary2" target="_blank">Live Preview</a>
+                <a href="https://github.com/ShyamanthaPerera/internet-technologies-assignments-10.git" class="btn btn-secondary2" target="_blank">Git source code</a>
+            </div>
+        </div>
     </div>
-    <div>
-        <img src="assets/icons/skills/icons8-visual-studio-96.png">
-        <h4>Visual Studios</h4>
-    </div>
-    <div>
-        <img src="assets/icons/skills/scenebuilder">
-        <h4>Scene Builder</h4>
+</section>
+
+
+
+
+<section class="section3" id="projects" >
+    <div class="projectList" style="background-color: black" >
+        <h2>PROJECT</h2>
+        <p>Explore a selection of projects that showcase my skills and expertise. Each project represents a unique challenge and solution, demonstrating my ability to innovate and deliver impactful results. From web applications to software solutions, these projects highlight my dedication to quality and creativity in every endeavor.</p>
     </div>
 
-    <h2>Others</h2>
-    <div>
-        <img src="assets/icons/skills/icons8-photoshop-96.png">
-        <h4>Adobe Photo Shop</h4>
-    </div>
-    <div>
-        <img src="assets/icons/skills/icons8-adobe-after-effects-96.png">
-        <h4>Adobe After Effects</h4>
-    </div>
-    <div>
-        <img src="assets/icons/skills/icons8-fl-studio-96.png">
-        <h4>FL Studio</h4>
-    </div>
-</div>
+    <div class="arow" style="background-color:black">
+        <div class="col card">
+            <img class="card-img-top" src="assets/images/co.jpg" alt="Card image cap">
+            <div class="card-body">
+                Certainly! Here's a simple project description for your Connect Four game using Java, JavaFX, and the minimax algorithm:
 
-<div>
-    <h1>Projects & Assignments</h1>
-    <h2>Projects I've done so far</h2>
-    <nav>
-        <a href="">Computer Management System</a>
-        <a href="">Vehicle Park Management System</a>
-        <a href="">Auto Workshop Management System</a>
-    </nav>
+                "Connect Four" is an engaging project developed using Java and JavaFX, incorporating the minimax algorithm to create a strategic game-playing experience. The project allows players to compete in the classic Connect Four game, where the objective is to connect four of their colored discs in a row vertically, horizontally, or diagonally on a grid.
+            </div>
+            <div class="card-footer">
+                <a href="https://github.com/ShyamanthaPerera/connect-four-game.git" class="btn btn-secondary2" target="_blank">Git source code</a>
+            </div>
+        </div>
 
-    <h2>Assignments I've done so far</h2>
-    <nav>
-        <a href="">Assignment 01</a>
-        <a href="">Assignment 02</a>
-        <a href="">Assignments 03</a>
-    </nav>
-</div>
-
-<div class="gallery">
-    <h1>Gallery</h1>
-
-    <img src="assets/images/gallery/IMG-20191224-WA0033.jpg">
-    <img src="assets/images/gallery/IMG_20180114_205940_262.jpg">
-    <img src="assets/images/gallery/IMG_20180529_212036_972.jpg">
-    <img src="assets/images/gallery/IMG_20180917_123405_893.jpg">
-    <img src="assets/images/gallery/IMG_20180917_210734_194.jpg">
-    <img src="assets/images/gallery/IMG_20180930_085400_364.jpg">
-    <img src="assets/images/gallery/IMG_20191221_091048.jpg">
-    <img src="assets/images/gallery/LRM_EXPORT_4912341609145_20190114_175016749.jpeg">
-    <img src="assets/images/gallery/LRM_EXPORT_184454299172374_20190217_181548992.jpeg">
-    <img src="assets/images/gallery/LRM_EXPORT_189896483228202_20190616_193347929.jpeg">
-    <img src="assets/images/gallery/LRM_EXPORT_268678141872447_20190605_224123537.jpeg">
-    <img src="assets/images/gallery/Macro%20Edited.jpg">
-    <img src="assets/images/gallery/shyamantha.jpeg">
-</div>
-
-<footer>
-    <h3>Shyamantha Perera</h3>
-    
-    <div>
-        <img src="assets/icons/footer_icons/icons8-home-address-100.png">
-        <p>95 B/1<br>Near The School<br>Walgama<br>Bandaragama<br>Sri Lanka</p>
-    </div>
-    <div>
-        <img src="assets/icons/footer_icons/icons8-phone-100%20(1).png">
-        <p>0717085277<br>0763417524</p>
-    </div>
-    <div>
-        <img src="assets/icons/footer_icons/icons8-email-96.png">
-        <p>shyamanthaperera@icloud.com<br>shyamanthaperera64@gmail.com<br>shyamanthaperera@yahoo.com</p>
+        <div class="col card">
+            <img class="card-img-top" src="assets/images/ddd.jpg" alt="Card image cap">
+            <div class="card-body">
+                Car Clinic Auto Workshop
+                <p>"Car Clinic" is a Java-based application designed to manage a car service center's operations efficiently. It utilizes JavaFX for the graphical user interface (GUI) and MySQL for database management. The project allows users to perform various tasks such as: Managing Customer Records, Handling Service Requests, Inventory Management, Billing and Payments,Employee Management</p>
+            </div>
+            <div class="card-footer">
+                <a href="https://github.com/ShyamanthaPerera/car-clinic-auto-workshop.git" class="btn btn-secondary2" target="_blank">Git source code</a>
+            </div>
+        </div>
     </div>
 
-    <div>
-        <img src="assets/icons/footer_icons/icons8-facebook-96.png">
-        <img src="assets/icons/footer_icons/icons8-instagram-96.png">
-        <img src="assets/icons/footer_icons/icons8-whatsapp-96.png">
-        <img src="assets/icons/footer_icons/icons8-youtube-96.png">
-        <img src="assets/icons/footer_icons/icons8-linked-in-96.png">
-        <img src="assets/icons/footer_icons/icons8-github-128.png">
-        <img src="assets/icons/footer_icons/icons8-twitterx-100.png">
-        <img src="assets/icons/footer_icons/icons8-pinterest-96.png">
-        <img src="assets/icons/footer_icons/icons8-spotify-96.png">
-        <img src="assets/icons/footer_icons/icons8-soundcloud-96.png">
+    <div class="arow2" style="background-color: black;padding-bottom: 200px;">
+        <div class="col card">
+            <img class="card-img-top" src="assets/images/ele.jpg" alt="Card image cap">
+            <div class="card-body">
+                "Elephant Pass" is a comprehensive project developed using Java, JavaFX, and MySQL technologies, aimed at managing and enhancing visitor experiences at wildlife reserves or national parks. This application facilitates efficient management of visitor entry, wildlife monitoring, and conservation efforts.
+            </div>
+            <div class="card-footer">
+                <a href="https://github.com/ShyamanthaPerera/elephant-pass.git" class="btn btn-secondary2" target="_blank">Git source code</a>
+            </div>
+        </div>
+        <div class="col card">
+            <img class="card-img-top" src="assets/images/li.jpg" alt="Card image cap">
+            <div class="card-body">
+                Certainly! Here's a simple description for your library management system project named "Book Worm":
+
+                "Book Worm" is a sophisticated library management system developed using Java, JavaFX, and MySQL technologies, designed to streamline library operations efficiently. This project enables librarians and patrons to manage library resources effectively through a user-friendly interface.
+            </div>
+            <div class="card-footer">
+                <a href="https://github.com/ShyamanthaPerera/book-worm.git" class="btn btn-secondary2" target="_blank">Git source code</a>
+            </div>
+        </div>
+
     </div>
-</footer>
+</section>
+
+
+<section id="contact">
+   <div class="frow" style="background-color: black">
+       <div class="f1">
+           <h2 class="con-title">More About me</h2>
+           <p> Experienced Software Engineer with a proven track record of success in the ever-evolving landscape of information technology and services. Proficient in crafting innovative solutions for both web and mobile applications. I am a dedicated and resourceful professional who excelled in my studies at the esteemed University of Bolton. My passion for cutting-edge technology fuels my commitment to delivering high-quality and impactful software solutions. With a keen eye for detail and a drive for continuous learning, I am poised to contribute my expertise to drive technical excellence and achieve outstanding results. </p>
+
+           <a href="https://www.example.com" class="icon-link"><i class="material-icons" style=" margin-right: 5px;">location_on</i>95B/1 near the school Walgama, bandaragama</a><br>
+           <a href="https://www.example.com" class="icon-link"><i class="material-icons" style=" margin-right: 5px;">email</i>shamnathaperera64@gmail.com</a><br>
+           <a href="https://www.example.com" class="icon-link"><i class="material-icons" style=" margin-right: 5px;">phone</i>+94717085277</a><br>
+           <a href="https://www.example.com" class="icon-link"><i class="material-icons" style=" margin-right: 5px;">link</i>Visit Example.com </a><br>
+
+       </div>
+       <div class="f2">
+           <div class="form-group">
+               <input type="text" id="user_name" class="form-control" placeholder="Enter your name">
+           </div>
+           <div class="form-group">
+               <input type="email" id="your_email" class="form-control" placeholder="Enter your email">
+           </div>
+           <div class="form-group">
+               <textarea name="InputMessage" id="user_message" class="form-control" rows="5" placeholder="Enter your message" required></textarea>
+           </div>
+           <a class="btn-medium">Let me know</a>
+       </div>
+
+   </div>
+</section>
 
 </body>
 </html>
